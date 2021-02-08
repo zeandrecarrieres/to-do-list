@@ -1,11 +1,13 @@
 const btnAdd = document.querySelector('#addTask')
-const btnDel = document.querySelector('.btnDel')
+
 const taskInput = document.querySelector('#task')
 const tasksDiv = document.querySelector('.tasks')
-const taskGroup = 
+// const taskGroup =
+const removeTask = document.querySelector('#removeTask')
 
 // console.log(btnAdd)
 // console.log(taskInput)
+
 
 btnAdd.addEventListener('click', (e)=>{
     const taskDesc = taskInput.value 
@@ -14,16 +16,34 @@ btnAdd.addEventListener('click', (e)=>{
     
     // console.log(e.target);
     
-    tasksDiv.appendChild(li, )
+    tasksDiv.appendChild(li)
     taskInput.value = null
+    
+})
+
+
+removeTask.addEventListener('click', ()=>{
+
+    const buttons = document.querySelectorAll('.btnDel')
+    console.log(buttons)
+
+    for (let i=0; i<buttons.length; i++){
+        console.log(buttons[i])
+    }
+
+
+//    btnDel.style.color='red'
+//     btnDel.addEventListener('click', deleteItem)
+//     function deleteItem(e){
+//        this.remove()
+     
+       
+// }
 })
 
 
 
-// btnDel.addEventListener('click', deleteItem())
 
-// function deleteItem(e){
-//     console.log(e.target)
-// }
+
 
 
