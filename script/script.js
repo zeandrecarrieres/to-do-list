@@ -29,6 +29,7 @@ removeTask.addEventListener('click', ()=>{
 
     for (let i=0; i<buttons.length; i++){
         buttons[i].addEventListener('click', deleteItem)
+        buttons[i].style.color='red'
         function deleteItem(e){
 
            this.parentNode.remove()
